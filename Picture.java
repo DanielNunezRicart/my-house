@@ -52,7 +52,7 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(70);
+        sun.moveVertical(85);
         sun.changeSize(80);
         sun.makeVisible();
         
@@ -63,7 +63,7 @@ public class Picture
         suelo.changeSize(900);
         suelo.makeVisible();
         
-        sun.slowMoveVertical(-130);
+        sun.slowMoveVertical(-135);
     }
 
     /**
@@ -92,5 +92,13 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+
+    /**
+     * Hace que el sol baje de nuevo
+     */
+    public void atardecer()
+    {
+        sun.slowMoveVertical(135);
     }
 }
